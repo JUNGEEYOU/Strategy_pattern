@@ -8,6 +8,10 @@ public abstract class Duck {
     public void swim(){
         System.out.println("음파음파~!");
     }
+    public void fly(){
+        System.out.println("파다파닥!");
+    }
+
     // 오리마다 모양이 달라서 추상메소드로 구현
     public abstract void display();
 }
