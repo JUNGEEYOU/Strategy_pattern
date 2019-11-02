@@ -25,8 +25,9 @@
 - 위의 다이어그램 구현 결과
     - 실제로는 각 클래스가 다른 파일로 구성되었습니다. 간단히 보기 위해 소스를 통합하였습니다.
 
-    // 1. Duck: 수퍼 클래스 
+     
     public abstract class Duck {
+        // 1. Duck: 수퍼 클래스 
         // 실체가 아닌 공통적인 특성을 모아 놓은 클래스라서 추상 클래스로 구현
         public void quack(){
             System.out.println("꽥꽥~!");
@@ -55,7 +56,7 @@
 
 - main
 
-    public class Main {
+      public class Main {
     
         public static void main(String[] args) {
     	Duck mallarduck = new MallardDuck();
@@ -142,7 +143,7 @@
 
 - main
 
-    public class Main {
+       public class Main {
     
         public static void main(String[] args) {
     	Duck mallarduck = new MallardDuck();
@@ -175,8 +176,9 @@
 - 클래스, 인터페이스 정의
     - 실제로는 각 클래스가 다른 파일로 구성되었습니다. 간단히 보기 위해 소스를 통합하였습니다.
 
-    // 1. Duck: 공통적인 swim, display 메소드만 남겼다. 
+
     public abstract class Duck {
+     // 1. Duck: 공통적인 swim, display 메소드만 남겼다.
         // 실체가 아닌 공통적인 특성을 모아 놓은 클래스라서 추상 클래스로 구현
     
         public void swim(){
@@ -238,7 +240,7 @@
 
 - main
 
-    public class Main {
+        public class Main {
     
         public static void main(String[] args) {
     
@@ -283,8 +285,9 @@
 - 클래스, 인터페이스 정의
     - 실제로는 각 클래스가 다른 파일로 구성되었습니다. 간단히 보기 위해 소스를 통합하였습니다.
 
-    // 1. Duck: FlyBehavior, QuackBehavior 인터페이스를 변수로 지정 
+    
     public abstract class Duck {
+    // 1. Duck: FlyBehavior, QuackBehavior 인터페이스를 변수로 지정 
         FlyBehavior flyBehavior;
         QuackBehavior quackBehavior;
     
@@ -369,7 +372,8 @@
 - main
     - model 객체를 보면 생성한 이후에도 setFlyBehavior() 메소드로 나는 방식을 변경 가능합니다.
 
-    public class Main {
+        
+        public class Main {
     
         public static void main(String[] args) {
     
