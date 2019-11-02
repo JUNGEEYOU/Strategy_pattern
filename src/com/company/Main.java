@@ -6,16 +6,14 @@ public class Main {
     public static void main(String[] args) {
 
 		MallardDuck mallarduck = new MallardDuck();
-		RedheadDuck redheadduck = new RedheadDuck();
-		RubberDuck rubberduck = new RubberDuck();
-		DecoyDuck decoyduck = new DecoyDuck();
+		mallarduck.display();       // 청둥오리입니다!
+		mallarduck.performFly();    // 날고있어요!
+		mallarduck.performQuack();  // 꽥꽥~!
 
-		System.out.println("청둥오리 fly()");
-		mallarduck.fly();			   // 파다파닥!
-		System.out.println("빨간오리 fly()");
-		redheadduck.fly();             // 파다파닥!
-		System.out.println("러버덕 quack()");
-		rubberduck.quack();            //삑삑~!
+		Duck model = new ModelDuck();
+		model.performFly();        // 저는 못날아요!
+		model.setFlyBehavior(new FlyRockerPowerd());
+		model.performFly();       //  로켓 추진으로 날아갑니다!
 
     }
 }

@@ -1,5 +1,5 @@
 package com.company.strategy_1;
 
-public interface Flyable {
+public interface FlyBehavior {
     public void fly();
 }
